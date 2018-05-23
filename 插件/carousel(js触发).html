@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+    <style>
+        body{padding:10px;margin:10px;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div id="slidershow" class="carousel slide col-md-12" >
+            <!-- 设置图片轮播的顺序 -->
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#slidershow" data-slide-to="0">1</li>
+                <li data-target="#slidershow" data-slide-to="1">2</li>
+                <li data-target="#slidershow" data-slide-to="2">3</li>
+            </ol>
+            <!-- 设置轮播图片区 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="##"><img src="img/12.jpg" alt=""></a>
+                    <div class="carousel-caption">
+                        <h3>图片标题1</h3>
+                        <p>描述内容1...</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a ><img src="img/22.jpg" alt=""></a>
+                    <div class="carousel-caption">
+                        <h3>图片标题2</h3>
+                        <p>描述内容2...</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="##"><img src="img/23.jpg" alt=""></a>
+                    <div class="carousel-caption">
+                        <h3>图片标题3</h3>
+                        <p>描述内容3...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 设置轮播图片控制器 -->
+            <a class="left carousel-control " data-target="#slidershow" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" data-target="#slidershow" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="js/jQuery%201.12.1.js"></script>
+<script src="js/transition.js"></script>
+<script src="js/carousel.js"></script>
+<script>
+
+//如果 carousel 容器上定义了 data-ride="carousel" 属性，页面加载之后就会自动加载轮播图片切换效果。如果没有定义 data-ride 属性，可以通过 JavaScript 方法来触
+    $("#slidershow").carousel({
+        interval:200,//轮番的等待时间
+        pause:hover, //默认鼠标悬停留在幻灯片区域停止播放
+        wrap:false //轮番是否持续循环
+    });
+</script>
+</body>
+</html>

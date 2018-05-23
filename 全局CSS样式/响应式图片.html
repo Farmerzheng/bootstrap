@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<style>
+    .clear::after{   /*IE6/7以外的浮动清除*/
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .clear{     /*IE6/7下的浮动清除*/
+        zoom:1;
+    }
+</style>
+<body>
+<div class="clear" >
+    <span class="caret pull-right " style="display: block;width:100px;height:100px;background: red"></span>
+</div>
+
+
+</body>
+</html>

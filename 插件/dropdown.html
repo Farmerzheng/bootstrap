@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.css">
+</head>
+<body>
+<!--Add data-toggle="dropdown" to a link or button to toggle a dropdown.-->
+<div id="wrap">
+    <div class="dropdown">
+        <a id="dLabel" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="btn btn-default">
+            Dropdown trigger
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dLabel">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/jQuery 1.12.1.js"></script>
+<script src="js/dropdown.js"></script>
+<script>
+
+    // data-toggle="dropdown" still required
+    //Regardless of whether you call your dropdown via JavaScript or instead use the data-api, data-toggle="dropdown" is always required to be present on the dropdown's trigger element.
+
+//    $('.dropdown-menu').dropdown();
+
+
+    $('.dropdown').on('hide.bs.dropdown', function () {
+        console.log(1);//This event is fired immediately when the hide instance method has been called.
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+/*字体引入*/
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('../sample/font/fontello.eot');
+	/* IE9*/
+	url('../sample/font/fonttello.woff的引入路径') format('woff'),
+	/* chrome、firefox */
+	url('../sample/font/fontello.ttf的引入路径') format('truetype'),
+	/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('../sample/font/fonttello.svg#iconfont的引入路径') format('svg');
+	/* iOS 4.1- */
+}
+
+
+/*头部导航部分*/
+
+body {
+	background: #f0f0f0;
+}
+
+.container .row {
+	text-align: center;
+}
+
+* {
+	font-family: 'Patua One', cursive;
+}
+
+.top-nav {
+	width: 100%;
+	border-bottom: 2px solid yellow;
+	background: rgb(11, 51, 63);
+	min-height: 5.2em;
+	margin-bottom: 0;
+	position: fixed;
+	z-index: 10;
+}
+
+.top-nav button {
+	margin-top: 25px;
+	background: #f0bf00;
+	border: none;
+}
+
+.brand {
+	display: inline;
+	float: left;
+}
+
+.top-nav h1 a {
+	font-size: 2em;
+	font-weight: 900;
+}
+
+.top-nav h1 a:hover {
+	color: #f0bf00;
+	text-decoration: none;
+}
+
+.top-nav a {
+	color: #ffffff;
+}
+
+.top-nav ul {
+	display: inline;
+	float: right;
+	margin-top: 1em;
+}
+
+.top-nav ul li {
+	height: 3em;
+	line-height: 3em;
+	float: left
+}
+
+.top-nav ul li a {
+	font-size: 1.2em;
+	padding: 6px 15px;
+}
+
+.top-nav ul li a:hover {
+	background: #f0bf00;
+	border-radius: 3px;
+	text-decoration: none
+}
+
+
+/*head部分*/
+
+.header {
+	background: url("../images/top-bg.jpg") no-repeat 0 -200px fixed;
+	text-align: center;
+	padding: 7em 0;
+}
+
+.header h1 {
+	font-size: 4em;
+	color: #ffffff;
+	margin: 1em 0;
+	font-weight: 900;
+	font-family: 'Open Sans', sans serif
+}
+
+.header h1 span {
+	color: #f0bf00
+}
+
+.header h2 {
+	color: #ffffff;
+	font-family: 'Open Sans', sans serif;
+	font-size: 2.5em;
+	font-weight: 700;
+	margin: 0.6em auto;
+	text-shadow: 1px 1px 1px #333333;
+}
+
+.header input[type=text] {
+	display: inline-block;
+	border-radius: 4px;
+	background: rgba(227, 231, 228, 1);
+	font-family: 'Open Sans', sans serif;
+	font-size: 1.35em;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 0 !important;
+	padding: 0.7em;
+}
+
+.header input[type=submit] {
+	font-family: 'Patua One', cursive;
+	color: #ffffff;
+	width: 185px;
+	height: 2.9em;
+	font-size: 1.32em;
+	padding: 0.5em;
+	background: #f0bf00 !important;
+	border-radius: 3px;
+	cursor: pointer;
+	font-weight: 500;
+	margin: 0.1em 0 0 0.5em;
+}
+
+.header .icon {
+	font-size: 54px;
+	margin: 1em 0 0.5em 0;
+}
+
+
+/*festure部分*/
+
+.feature {
+	background: #f0bf00;
+	padding: 2em 0 5em 0;
+}
+
+.artical {
+	text-align: center;
+	margin-top: 120px;
+	max-width: 1170px;
+}
+
+.artical p {
+	font-family: 'Patua One', cursive;
+	font-size: 40px;
+	line-height: 1;
+	margin: 0 0 0.5em 0;
+	color: #ffffff;
+	font-weight: 900;
+}
+
+
+/*portfolio部分*/
+
+.align {
+	text-align: center;
+	font-size: 6em;
+	margin-top: 1em;
+}
+
+.portfolio h1,
+.services h1,
+.teams h1,
+.blog h1 {
+	text-align: center;
+	font-size: 3em;
+	margin: 0.5em 0 0 1em;
+	color: #000000;
+	font-weight: 900;
+}
+
+.part1 {
+	width: 370px;
+	display: inline-block;
+	margin: 2em 0 0 1.2em;
+}
+
+.part1 h3,
+.part2 h3 {
+	width: 100%;
+	font-size: 1.31em;
+	font-family: 'Patua One', cursive;
+	font-weight: 900;
+	margin: 0.5em 0;
+}
+
+.part1 p {
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 0 0 1.5em 0;
+	color: #312A1E;
+}
+
+.part1 p a {
+	color: #f0bf00;
+}
+
+.part1 img {
+	width: 100%;
+}
+
+
+/*service部分*/
+
+.services {
+	padding-bottom: 4em;
+}
+
+.services .part2 {
+	width: 270px;
+	padding: 20px 0;
+	display: inline-block;
+	text-align: center;
+}
+
+.part2-top {
+	margin-top: 10px;
+	font-size: 5em;
+	color: #f0bf00;
+}
+
+
+/*quoter部分*/
+
+.quoter {
+	background: #f0bf00;
+}
+
+.quoter .cite {
+	padding: 5em 0 1em 0;
+	font-size: 1.5em;
+	text-align: left;
+	color: #312A1E;
+	font-weight: 900;
+}
+
+.quoter .cite2 {
+	font-size: 3em;
+	text-align: left;
+	color: #312A1E;
+	font-weight: 900;
+	padding: 0 0 3em 0;
+}
+
+
+/*blog部分*/
+
+.data {
+	padding: 1em 0 0.5em 0;
+}
+
+a[class="btn btn-success"] {
+	margin: 3em 0;
+	width: 185px;
+	height: 40px;
+	font-size: 1.32em;
+	background: #f0bf00;
+	;
+}
+
+
+/*team部分*/
+
+.teams {
+	background: #312A1E;
+	text-align: center
+}
+
+.teams h1 {
+	margin: 0.5em 0 1em 0;
+	color: #ffffff;
+}
+
+i[class="icon-group-circled"],
+i[class="icon-mail-2"],
+.teams h2,
+.teams p {
+	color: #e4e5e2;
+}
+
+.intro {
+	margin: 0 3em 2em 2.5em;
+	display: inline-block;
+}
+
+.teams h1 span {
+	font-weight: normal;
+	font-family: 'Quattrocento', serif;
+}
+
+.teams p {
+	font-size: 1.5em;
+	margin: 0 0 1em 0;
+	line-height: 1.5;
+}
+
+.teams input[type=text] {
+	height: 4em;
+	background: rgba(227, 231, 228, 1);
+	text-align: left;
+	vertical-align: middle;
+	padding: 0.5em;
+	margin-bottom: 1.5em;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2em;
+}
+
+textarea {
+	background: rgba(227, 231, 228, 1);
+	border-radius: 5px;
+}
+
+.teams input[type=button] {
+	width: 220px;
+	height: 60px;
+	padding: 0.5em;
+	margin: 2em auto;
+	background: #f0bf00;
+	color: #ffffff;
+	font-weight: 900;
+	font-size: 2em;
+}
+
+@media screen and (max-width: 640px) and (min-width: 320px) {
+	.header {
+		padding: 5em 0 1em 0;
+		text-align: center;
+		background: url("../images/top-bg.jpg") no-repeat -350px -475px fixed;
+	}
+	.header h1 {
+		font-size: 2.5em;
+		line-height: 1.2em;
+	}
+	.header h2 {
+		font-size: 1.3em;
+		font-weight: normal;
+	}
+	.header input[type=submit] {
+		margin: 1em 0 0 0;
+	}
+	.artical p {
+		font-size: 28px;
+		line-height: 1;
+		margin: 0 0 0.5em 0;
+		font-weight: normal;
+	}
+	.quoter .cite,
+	.quoter .cite2 {
+		text-align: center;
+	}
+}

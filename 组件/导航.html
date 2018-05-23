@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.css">
+</head>
+<body>
+
+<div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" >Home</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" >Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" >Messages</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" >Settings</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <!--<div class="tab-content">-->
+        <!--<div role="tabpanel" class="tab-pane active" id="home">.asdf..</div>-->
+        <!--<div role="tabpanel" class="tab-pane" id="profile">...dddd</div>-->
+        <!--<div role="tabpanel" class="tab-pane" id="messages">.ddss..</div>-->
+        <!--<div role="tabpanel" class="tab-pane" id="settings">..sadsfddd.</div>-->
+    <!--</div>-->
+
+</div>
+<script src="js/jQuery 1.12.1.js"></script>
+<script src="js/tab.js"></script>
+<script>
+    $('.nav li').click(function (e) {
+        e.preventDefault();
+        console.log($(this).index());
+        $(this).tab('show');
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+    maximum-scale=1, user-scalable=no">
+    <!--上面的这三行，必须位于head的头三行，其他标签不能在这些行之上-->
+    <title>排版</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.css">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <h1>标题</h1>
+    <h3>
+        HTML 中的所有标题标签，h1 到 h6 均可使用。另外，还提供了 .h1 到 .h6 类，为的是给内联（inline）属性的文本赋予标题的样式。
+    </h3>
+    <h1>h1. Bootstrap heading</h1>
+    <h2>h2. Bootstrap heading</h2>
+    <h3>h3. Bootstrap heading</h3>
+    <h4>h4. Bootstrap heading</h4>
+    <h5>h5. Bootstrap heading</h5>
+    <h6>h6. Bootstrap heading</h6>
+    <h3>
+        在标题内还可以包含 small标签或赋予 .small 类的元素，可以用来标记副标题。
+    </h3>
+    <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+    <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+    <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+    <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+    <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+    <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+    <br>
+    <br>
+    <br>
+
+    <h1>页面主体</h1>
+    <h3>    Bootstrap 将全局 font-size 设置为 14px，line-height 设置为 1.428。这些属性直接赋予 body 元素和所有段落元素。另外，p（段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。
+    </h3>
+    <p>
+        Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+    </p>
+    <p>
+        Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+    </p>
+    <p>
+        Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+    </p>
+
+    <h2>中心内容</h2>
+    <h3>通过添加 .lead 类可以让段落突出显示。</h3>
+    <p class="lead">
+        Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>内联文本元素</h1>
+    You can use the mark tag to <mark>highlight</mark> text.
+    <h3>对于被删除的文本使用 del 标签。</h3>
+    <del>This line of text is meant to be treated as deleted text.</del>
+    <h3>对于没用的文本使用 s标签。</h3>
+    <s>This line of text is meant to be treated as no longer accurate.</s>
+    <h3>额外插入的文本使用 ins标签。</h3>
+    <ins>This line of text is meant to be treated as an addition to the document.</ins>
+    <h3>为文本添加下划线，使用 u 标签。</h3>
+    <u>This line of text will render as underlined</u>
+    <h3>对于不需要强调的inline或block类型的文本，使用 small 标签包裹，其内的文本将被设置为父容器字体大小的 85%。标题元素中嵌套的 small 元素被设置不同的 font-size 。你还可以为行内元素赋予 .small 类以代替任何 small 元素。
+    </h3>
+    <small>This line of text is meant to be treated as fine print.</small>
+    <h3>通过增加 font-weight 值强调一段文本。</h3>
+    <strong>rendered as bold text</strong>
+    <h3>用斜体强调一段文本。</h3>
+    <em>rendered as italicized text</em>
+    <h3>在 HTML5 中可以放心使用 b 和 i 标签。b 用于高亮单词或短语，不带有任何着重的意味；而 i>标签主要用于发言、技术词汇等。
+    </h3>
+    <h3>通过文本对齐类，可以简单方便的将文字重新对齐</h3>
+    <p class="text-left">Left aligned text.</p>
+    <p class="text-center">Center aligned text.</p>
+    <p class="text-right">Right aligned text.</p>
+    <p class="text-justify">Justified text.</p>
+    <p class="text-nowrap">No wrap text.</p>
+    <h3>通过这几个类可以改变文本的大小写</h3>
+    <p class="text-lowercase">Lowercased text.</p>
+    <p class="text-uppercase">Uppercased text.</p>
+    <p class="text-capitalize">Capitalized text.</p>
+
+    <h1>缩略语</h1>
+    <h3>
+        当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的 abbr 元素的增强样式。缩略语元素带有 title 属性，外观表现为带有较浅的虚线框，鼠标移至上面时会变成带有“问号”的指针。如想看完整的内容可把鼠标悬停在缩略语上（对使用辅助技术的用户也可见）, 但需要包含 title 属性。
+    </h3>
+    <h3>基本缩略语</h3>
+    <abbr title="attribute">attr</abbr>
+    <h3>首字母缩略语</h3>
+    <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+    <h1> 地址</h1>
+    <h3> 让联系信息以最接近日常使用的格式呈现。在每行结尾添加 br可以保留需要的样式。</h3>
+    <address>
+        <strong>Twitter, Inc.</strong><br>
+        795 Folsom Ave, Suite 600<br>
+        San Francisco, CA 94107<br>
+        <abbr title="Phone">P:</abbr> (123) 456-7890
+    </address>
+    <address>
+        <strong>Full Name</strong><br>
+        <a href="mailto:#">first.last@example.com</a>
+    </address>
+    <br>
+    <br>
+    <h1>引用</h1>
+    <h2>在你的文档中引用其他来源的内容。</h2>
+    <h3>将任何 HTML 元素包裹在 blockquote中即可表现为引用样式。对于直接引用，我们建议用 p>标签。</h3>
+    <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    </blockquote>
+    <h3>添加 footer用于标明引用来源。来源的名称可以包裹进 cite标签中。</h3>
+    <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+    <h3>通过赋予 .blockquote-reverse 类可以让引用呈现内容右对齐的效果。</h3>
+    <blockquote class="blockquote-reverse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+    <br>
+    <br>
+    <h1>列表</h1>
+    <h2>无序列表</h2>
+    <ol>
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+    </ol>
+    <h2>有序列表</h2>
+    <ul>
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+    </ul>
+    <h2>无样式列表</h2>
+    <ul class="list-unstyled">
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+    </ul>
+    <h2>内联列表</h2>
+    <ul class="list-inline">
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+        <li>Nulla volutpat aliquam velit </li>
+    </ul>
+    <h2>带有描述的短语列表</h2>
+    <dl>
+        <dt> Description lists</dt>
+        <dd>A description list is perfect for defining terms.</dd>
+    </dl>
+    <h2>水平排列的描述</h2>
+    <h3> .dl-horizontal 可以让 dl 内的短语及其描述排在一行。开始是像 dl 的默认样式堆叠在一起，随着导航条逐渐展开而排列在一行。
+    </h3>
+    <dl class="dl-horizontal">
+        <dt>Description lists</dt>
+        <dd>A description list is perfect for defining terms.</dd>
+    </dl>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<script src="bootstrap-3.3.5-dist/js/jQuery 1.12.1.js"></script>
+<script src="../bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>项目实战</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--模态框-->
+<div class="modal fade" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span
+                            class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">用户信息注册</h4>
+            </div>
+            <div class="modal-body">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="请输入用户名" aria-describedby="sizing-addon1">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="请输入密码" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2">@example.com</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand logo"><img src="img/logo-default.png" alt="logo"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#"> 首页</a></li>
+                <li><a href="#"> 产品中心</a></li>
+                <li><a href="#"> 广告信息</a></li>
+                <li><a href="#"> 服务条款</a></li>
+                <li><a href="#">资源下载</a></li>
+                <li><button type="button" class="btn btn-success " data-toggle="modal" data-target="#mymodal">
+                  登录|注册
+                </button></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!--轮播-->
+
+
+
+
+
+
+
+<figure class="banner bg-img bg-app bg-inverse" data-height="500" style="margin-top:100px;background-image: url(img/fade-bg.png);padding:50px ;background-color:rgba(102,202,56,0.5)">
+        <div class="container">
+            <div class="row vcenter-md">
+                <div class="col-md-5 col-md-push-7 text-center text-md-left">
+                    <h1 class="display-2 m-y">极速上网体验</h1>
+                    <p class="lead m-b-md">国内领先的加速服务提供商. 按时、按量弹性计费，灵活满足您的使用需求！</p>
+                    <a class="btn btn-default btn-lg" href="#">立即订购</a>
+                </div>
+                <div class="col-md-6 col-md-pull-5 hidden-sm hidden-xs">
+                    <img class="img-responsive img-full" src="img/frontend_home1.png" alt="">
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+
+</figure>
+
+
+    <div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+    <div class="item active" style="background:#223240">
+    <img src="img/slide1.png" alt="第一张">
+    </div>
+    <div class="item" style="background:#F5E4DC;">
+    <img src="img/slide2.png" alt="第二张">
+    </div>
+    <div class="item" style="background:#DE2A2D;">
+    <img src="img/slide3.png" alt="第三张">
+    </div>
+    </div>
+    <a href="#myCarousel" data-slide="prev" class="carousel-control left">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#myCarousel" data-slide="next" class="carousel-control right">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+    </div>
+
+
+
+<div class="tab1">
+    <div class="container">
+        <h2 class="tab-h2">轻量级加速服务</h2>
+        <p class="tab-p">精心挑选每一条线路，为企业级用户提供高达99%的可用性保障</p>
+        <div class="row">
+            <div class="col-md-4 col">
+                <div class="media">
+                    <div class="media-body">
+                        <span><img src="img/no1.png"></span>
+                        <h4 class="media-heading">隐私安全</h4>
+                        <p>提供独有的CDN信道加密技术，高隐匿数据传输。拒绝逆向追踪</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col">
+                <div class="media">
+                    <div class="media-body">
+                        <span><img src="img/no2.png"></span>
+                        <h4 class="media-heading">节点分布</h4>
+                        <p >全球高速节点，中转加速千兆网络带宽，大带宽网络保证使用速度</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col">
+                <div class="media">
+                    <div class="media-body">
+                        <span><img src="img/no3.png"></span>
+                        <h4 class="media-heading">顶级安排</h4>
+                        <p >30分钟快速响应，7*24小时服务在线服务，保证每一个用户的售后支持</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="tab2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 tab2-img">
+                <img src="img/frontend_home2.png" class="auto img-responsive center-block" alt="">
+            </div>
+            <div class="text col-md-6 col-sm-6 tab2-text">
+                <h3>天下武功，唯快不破</h3>
+                <p>全新升级的加速节点采用更多的线路和更强大的硬件部署，速度比之前提升 15% 以上，再次刷新「最快记录」。数个月内通过不同地区节点向各种类似服务不间断链接测速得出结果，在平均速度和稳定性上均高于其他收费产品。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="tab3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <img src="img/frontend_home3.png" class="auto img-responsive center-block" alt="">
+            </div>
+            <div class="text col-md-6 col-sm-6">
+                <h3>完美的存在，是感觉不到存在</h3>
+                <p>在使用时会自动识别目标网站的服务器所在地，自动优选最佳线路，同时国内网站不受任何影响。让您工作倍加便捷的同时，完全感受不到它的存在，为您的工作节省时间，提高生产效率。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="tab4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 tab2-img">
+                <img src="img/frontend_home4.png" class="auto img-responsive center-block" alt="">
+            </div>
+            <div class="text col-md-6 col-sm-6">
+                <h3>隐私承诺，绝不动摇</h3>
+                <p>通过我们的加速服务访问网络时，其隐私和安全性则显得尤为重要。我们确保您在使用的过程中不会有任何具体信息被留存于任何一台服务器当中；同时，在通过我们的加速服务进行传输时我们会采用商业级的加密手段，因此使用我们的加速服务只会让你的网络环境变得更加安全。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tab5">
+    <div class="container">
+        <h2 class="tab-h2">一分钟注册</h2>
+        <p class="tab-p">我们提供1元试用套餐，让您买得放心，用得安心！</p>
+        <button class="btn btn-info">立即注册</button>
+
+
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="container">
+        <p>© 2016 Jiasu Cloud All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>//轮播自动播放
+//$('#myCarousel').carousel({
+////自动4秒播放
+//    interval : 4000
+//});
+</script>
+
+</body>
+</html>

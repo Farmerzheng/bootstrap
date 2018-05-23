@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_bg">
+            <h1 class="title">为 WEB 艺术家创造的 PHP 框架。</h1>
+            <div class="document">
+                <a href="" class="btn btn-default">5.5文档</a>
+                <a href="" class="btn btn-default">5.5文档</a>
+                <a href="" class="btn btn-default">5.5文档</a>
+                <a href="" class="btn btn-default">5.5文档</a>
+                <a href="" class="btn btn-default">5.5文档</a>
+                <a href="" class="btn btn-default">5.5文档</a>
+                <a href="" class="btn btn-default">5.5文档</a>
+                <a href="" class="btn btn-default">5.5文档</a>
+                <a href="" class="btn btn-default">5.5文档</a>
+                <a href="" class="btn btn-default">5.5文档</a>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="nav-btn">
+                <button class="btn btn-default">
+                            菜单
+                </button>
+            </div>
+            <ul class="nav_wrap">
+                <li class="nav_item">
+                    <a href=""> 首页</a>
+                </li>
+                <li class="nav_item">
+                    <a href=""> Laravel 中文文档</a>
+                </li>
+                <li class="nav_item">
+                    <a href=""> Packagist 中国镜像</a>
+                </li>
+                <li class="nav_item">
+                    <a href="">Composer 中文文档</a>
+                </li>
+                <li class="nav_item">
+                    <a href="">PHP 中文手册</a>
+                </li>
+                <li class="nav_item">
+                    <a href=""> PHP 编程之道</a>
+                </li>
+                <li class="nav_item">
+                    <a href=""> 问答社区</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-sm-9 left">
+                <div class="content_item">
+                    <h2 class="title">Laravel 5.6 版本正式发布</h2>
+                    <p class="from">
+                        <span>作者：</span>
+                        <span class="author"> 王赛 </span>
+                        <span>• 2018年02月08日</span>
+                    </p>
+                    <div class="img">
+                        <img src="images/laravel-5.6.png" alt="" class="img-responsive">
+                    </div>
+                    <p class="des">
+                        <span>  Laravel 5.6 是继 5.5 之后 Laravel 官方发布的最新版本。此版本包含众多新特性，接下来我们说一说几个重要的特性。如需查看完成的发布日志，请点击
+                            
+                        </span>
+                        <a href="" class="link"> 这里。</a>
+                    </p>
+                    <p>
+                        <button class="btn btn-item">
+                            阅读全文
+                        </button>
+                    </p>
+                </div>
+                <div class="content_item"></div>
+                <div class="content_item"></div>
+            </div>
+            <div class="col-sm-3 right">
+                <div class="side">
+                    <h2 class="title">
+                        社区
+                    </h2>
+                    <div class="bar">
+                        <span class="color"></span>
+                        <span></span>
+                    </div>
+                    <div>
+                        <button class="btn btn-item side-btn">
+                            一键安装包下载
+                        </button>
+                    </div>
+                </div>
+                <div class="side">
+                    <h2 class="title">
+                        下载
+                    </h2>
+                </div>
+                <div class="side">
+                    <h2 class="title">
+                        文档
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    let nav_btn = document.querySelector('.nav-btn');
+    nav_btn.addEventListener('click', function() {
+        if (this.parentNode.className === 'nav') {
+            this.parentNode.className = 'nav active'
+        } else {
+            this.parentNode.className = 'nav'
+        }
+
+    })
+</script>
+
+</html>

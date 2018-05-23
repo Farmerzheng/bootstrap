@@ -1,0 +1,39 @@
+/*nav*/
+.navbar-default .navbar-toggle {
+     border-color:transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #d4d4d4;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color:transparent;
+}
+.navbar-brand > img {
+    display: block;
+    height: 130%!important;
+}
+/*carousel*/
+.carousel {
+    top: -35px;
+}
+.carousel-img{
+    padding: 0!important;
+}
+
+.carousel-row{
+    margin: 0 -30px;
+}
+/*pc*/
+@media(min-width: 768px){
+    .container-fluid {
+        padding: 15px;
+    }
+}
+@media(max-width:768px){
+    .carousel{
+     top:-19px
+    }
+    .carousel-img img{
+        height:20rem!important;
+    }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>小云社群</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--nav-->
+<nav class="navbar navbar-default" id="nav" style="position:relative;left:0">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button id="navBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.baidu.com">
+                <img src="img/logo.png" alt="" style="height:100%">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navContent">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <label for="">解释下面的input标签</label>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+</nav>
+<div id="content" style="position:relative">
+    <!--carousel-->
+    <div class="container-fluid">
+        <div class="row carousel-row">
+            <div id="slidershow" class="carousel slide col-md-12" data-ride="carusel">
+                <!-- 设置图片轮播的顺序 -->
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#slidershow" data-slide-to="0">1</li>
+                    <li data-target="#slidershow" data-slide-to="1">2</li>
+                    <li data-target="#slidershow" data-slide-to="2">3</li>
+                </ol>
+                <!-- 设置轮播图片区 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="container-fluid carousel-img">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 " style="position: relative">
+                                    <img src="img/header01.png" class=" img-responsive"
+                                         alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container-fluid carousel-img">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12">
+                                    <img src="img/header02.png" class="img-responsive"
+                                         alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container-fluid carousel-img">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12"><img src="img/header03.png" class="img-responsive"
+                                                                      alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="js/jQuery%201.12.1.js"></script>
+<script src="js/collapse.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/transition.js"></script>
+<script src="js/rem.js"></script>
+<script>
+    var navBtn=$("#navBtn");
+    var navContent=$("#navContent");
+    var contentDiv=$("#content")
+    var screenWidth=window.screen.width;
+    var screenHeight=window.screen.height;
+//    console.log(screenWidth);
+    if(screenWidth<768){
+        navContent.css({"width":"200px","height":screenHeight,background:"red",position:"absolute",right:"-386px",top:0,display:"block"})
+    }
+
+    var flag=true;
+    navBtn.on("click",function(){
+        console.log(1);
+        if(flag){
+            $("#nav").animate({left:"-200px"},100);
+            navContent.animate({right:"-186px"},100);
+            contentDiv.animate({left:"-200px"},100);
+            flag=!flag;
+        }else{
+            $("#nav").animate({left:"0px"},100);
+            navContent.animate({right:"-386px"},100);
+            contentDiv.animate({left:"0"},100);
+            flag=!flag;
+        }
+
+    });
+
+
+
+</script>
+</html>

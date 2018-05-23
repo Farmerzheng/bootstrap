@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>警告框--使用声明式触发警告框</title>
+    <link rel="stylesheet" href="wrapCss/css/bootstrap.css">
+</head>
+<body>
+<!--data属性触发-->
+<h3>使用a标签作为关闭按钮</h3>
+<div class="alert alert-warning" role="alert">
+    <h4>谨防被骗</h4>
+    <p>请确认您转账的信息是你的亲朋好友，不要轻意相信不认识的人...</p>
+    <a  class="btn btn-danger" data-dismiss="alert">关闭</a>
+</div>
+
+<h3>使用button按钮作为关闭按钮</h3>
+<div class="alert alert-warning" role="alert">
+    <h4>谨防被骗</h4>
+    <p>请确认您转账的信息是你的亲朋好友，不要轻意相信不认识的人...</p>
+    <button id="close1" type="button" class="btn btn-danger" data-dismiss="alert">关闭</button>
+</div>
+
+<!--javascript方法触发-->
+<div class="alert alert-warning" role="alert" id="myAlert">
+    <h4>谨防被骗</h4>
+    <p>请确认您转账的信息是你的亲朋好友，不要轻意相信不认识的人...</p>
+    <button id="close2" type="button" class="btn btn-danger">关闭</button>
+</div>
+
+<script src="js/jQuery%201.12.1.js"></script>
+<script src="js/alert.js"></script>
+<script>
+//    js触发
+        $("#close2").on("click",function(){
+            // alert()
+            $(this).alert("close");
+        });
+
+        //事件
+            $("#myAlert").on("closed.bs.alert",function(){
+                console.log(1);
+//                for(var i=0;i<100000;i++){
+//                    console.log(i);
+//                }
+            });
+
+        $("#myAlert").on("close.bs.alert",function(){
+            console.log(2);
+            alert("警告框正在关闭");
+        });
+
+</script>
+</body>
+
+</html>

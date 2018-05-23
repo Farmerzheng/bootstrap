@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="jQuery%201.12.1.js"></script>
+</head>
+<style>
+    #slideBar {
+        background: red;
+        position: fixed;
+        top: 0
+    }
+</style>
+<body>
+<button id="btn">菜单</button>
+<div id="slideBar"></div>
+</body>
+<script>
+    //   var btn=$("button");
+    //   var slideBar=$("#slideBar");
+    //   var screenWidth=window.screen.width;
+    //   var screenHeight=window.screen.height;
+    //   var flag=true;
+    //   slideBar.css({
+    //       width:screenWidth*0.6,
+    //       height:screenHeight,
+    //       right:-screenWidth*0.6
+    //   });
+    //    btn.click(function(){
+    //        console.log(1);
+    //        if(flag){
+    //            slideBar.animate({
+    //                right:0
+    //            })
+    //            flag=!flag;
+    //        }else{
+    //            slideBar.animate({
+    //                right:-screenWidth*0.6
+    //            })
+    //            flag=!flag;
+    //        }
+    //
+    //    })
+
+    var slideBar = {
+        init: function () {
+            this.initStyle();
+            this.bindEvent();
+        },
+        initStyle: function () {
+            var me=this;
+            this.slideContent.css({
+                width: me.width * 0.6,
+                height: me.height,
+                right: -me.width* 0.6
+            })
+        },
+        button: $("button"),
+        slideContent: $("#slideBar"),
+        width:window.screen.width,
+        height:window.screen.height,
+        flag:true,
+        bindEvent: function () {
+            var me=this;
+            this.button.on("click", function () {
+                console.log(1);
+                        if(me.flag){
+                            me.slideContent.animate({
+                                right:0
+                            })
+                            me.flag=!me.flag;
+                        }else{
+                            me.slideContent.animate({
+                                right:-me.width*0.6
+                            })
+                            me.flag=!me.flag;
+                        }
+            })
+        }
+    }
+    slideBar.init();
+</script>
+</html>

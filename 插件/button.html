@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>button.js</title>
+    <link rel="stylesheet" href="wrapCss/css/bootstrap.css">
+</head>
+<body>
+<br>
+<br>
+<br>
+<button type="button" id="myButton" class="btn btn-primary">
+    默认状态
+</button>
+</body>
+<script src="js/jQuery 1.12.1.js"></script>
+<script>
+
+   var btn = $("#myButton");
+
+   btn.on("click",function(){
+
+       $(this).text("正在加载中。。。");
+
+    //    this.innerText="正在加载中……"
+
+       var t = setTimeout(function(){
+           btn.text("加载完成")
+       },2000)
+
+       // $.ajax({
+       // 	method:"GET",
+       // 	url:"",
+       // 	data:{},
+       // 	success:function(){
+       //         $(this).text("加载完成");
+             // var t = setTimeout(function(){
+             //     btn.text("默认状态")
+             // },2000)
+       // 	},
+       // 	error:function(){
+
+       // 	}
+       // })
+
+   })
+
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div{
+        width:100%;
+        height:300px;
+        background:yellow;
+    }
+</style>
+<body>
+<button>按钮1</button>
+<button>按钮2</button>
+<button>按钮3</button>
+<div id="content"></div>
+</body>
+<script>
+    var dataArr=["按钮1的内容","按钮2的内容","按钮3的内容"];
+    var btnArr=document.getElementsByTagName("button");
+    var oDiv=document.getElementById("content");
+    for(var i=0;i<btnArr.length;i++){
+        btnArr[i].onclick=function(num){
+            return function (){
+                console.log(num);
+                oDiv.innerText=dataArr[num];
+            }
+        }(i)
+    }
+</script>
+</html>

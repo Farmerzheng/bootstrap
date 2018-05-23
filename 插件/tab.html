@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>选项卡的结构</title>
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- 选项卡组件（菜单项nav-tabs）-->
+    <!--<ul id="myTab" class="nav nav-pills" role="tablist">-->
+    <!--<li class="active"><a href="#bulletin" role="tab" data-toggle="tab">公告</a></li>-->
+    <!--<li><a href="#rule" role="tab" data-toggle="tab">规则</a></li>-->
+    <!--<li><a href="#forum" role="tab" data-toggle="tab">论坛</a></li>-->
+    <!--<li><a href="#security" role="tab" data-toggle="tab">安全</a></li>-->
+    <!--<li><a href="#welfare" role="tab" data-toggle="tab">公益</a></li>-->
+    <!--</ul>-->
+    <!--&lt;!&ndash; 选项卡面板 &ndash;&gt;-->
+    <!--<div id="myTabContent" class="tab-content">-->
+    <!--<div class="tab-pane fade in active" id="bulletin" style="font-size: 50px">公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板</div>-->
+    <!--<div class="tab-pane fade" id="rule"style="font-size: 50px">规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板</div>-->
+    <!--<div class="tab-pane fade" id="forum">论坛内容面板</div>-->
+    <!--<div class="tab-pane fade" id="security">安全内容面板</div>-->
+    <!--<div class="tab-pane fade" id="welfare">公益内容面板</div>-->
+    <!--</div>-->
+
+    <!--选项卡组件（菜单项tabs）-->
+    <ul id="myTab" class="nav nav-tabs nav-justified" role="tablist">
+        <!-- data-target属性  属性值 -->
+        <li><a href="#bulletin" data-toggle="tab" data-target="#bulletin" role="tab">公告</a></li>
+        <li><a href="#rule" data-toggle="tab" data-target="#rule" role="tab">规则</a></li>
+        <li class="active"><a data-toggle="tab" data-target="#forum" href="#forum" role="tab">论坛</a></li>
+        <li><a href="#security" data-toggle="tab" data-target="#security" role="tab">安全</a></li>
+        <li><a href="#welfare" data-toggle="tab" data-target="#welfare" role="tab">公益</a></li>
+    </ul>
+    <!-- 选项卡面板 -->
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade" id="bulletin">公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板公告内容面板</div>
+        <div class="tab-pane fade" id="rule">规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板规则内容面板</div>
+        <div class="tab-pane fade active in" id="forum">论坛内容面板论坛内容面板论坛内容面板论坛内容面板论坛内容面板论坛内容面板论坛内容面板</div>
+        <div class="tab-pane fade" id="security">安全内容面板</div>
+        <div class="tab-pane fade" id="welfare">公益内容面板公益内容面板公益内容面板公益内容面板公益内容面板公益内容面板公益内容面板公益内容面板公益内容面板</div>
+    </div>
+
+    <script src="js/jQuery%201.12.1.js"></script>
+    <!-- 转场动画的插件 fade类 -->
+    <script src="js/transition.js"></script>
+    <script src="js/tab.js"></script>
+    <script>
+        /*You can activate a tab or pill navigation without writing any JavaScript by simply specifying data-toggle="tab" or data-toggle="pill" on an element. Adding the nav and nav-tabs classes to the tab ul will apply the Bootstrap tab styling, while adding the nav and nav-pills classes will apply pill styling.
+         */
+        // $('#myTab a').click(function (e) {
+        //            e.preventDefault();
+        //            console.log(e.target);
+        // $(this).tab('show');
+        // });
+        //事件
+
+        //    $('a[data-toggle="tab"]').on('hide.bs.tab', function (e) {
+        //        e.target // newly activated tab
+        //        e.relatedTarget // previous active tabd
+        //    })
+    </script>
+</body>
+
+</html>

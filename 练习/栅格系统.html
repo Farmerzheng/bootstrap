@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+    maximum-scale=1, user-scalable=no">
+    <!--上面的这三行，必须位于head的头三行，其他标签不能在这些行之上-->
+    <title>bootstrap测试</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.css">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .container{
+            /*background:greenyellow;*/
+        }
+        [class*="col-"]{
+            padding:20px;
+            background:#eee;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>这是包装器，所有的页面内容都要放在这个div下面</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>实例：从堆叠到水平排列</h1>
+    <h3>
+        使用单一的一组 .col-md-* 栅格类，就可以创建一个基本的栅格系统，在手机和平板设备上一开始是堆叠在一起的（超小屏幕到小屏幕这一范围），在桌面（中等）屏幕设备上变为水平排列。所有“列（column）必须放在 ” .row 内。
+    </h3>
+    <div class="row">
+        <div class="col-md-4" >col-md-4</div>
+        <div class="col-md-4">col-md-4</div>
+        <div class="col-md-4" >col-md-4</div>
+    </div>
+    <div class="row" >
+        <div class="col-md-4">col-md-4</div>
+        <div class="col-md-2">col-md-2</div>
+    </div>
+    <div class="row" >
+        <div class="col-md-4">col-md-4</div>
+        <div class="col-md-1">col-md-1</div>
+    </div>
+    <div class="row" >
+        <div class="col-md-4 col-xs-offset-1">偏移一个栅格</div>
+    </div>
+
+    <div class="row" >
+        <div class="col-md-9">
+            栅格嵌套
+            <div class="row">
+                <div class="col-md-2">栅格嵌套</div>
+                <div class="col-md-4">栅格嵌套</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="col-md-4 col-md-push-2">栅格排序</div>
+        <div class="col-md-2 col-md-pull-4">栅格排序</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-9">.col-xs-9（多余的列将被挤到下一行）</div>
+        <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+        <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>实例：移动设备和桌面屏幕</h1>
+    <h3>
+        是否不希望在小屏幕设备上所有列都堆叠在一起？那就使用针对超小屏幕和中等屏幕设备所定义的类吧，即 .col-xs-* 和 .col-md-*
+    </h3>
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row">
+        <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <div class="row">
+        <div class="col-xs-6">.col-xs-6</div>
+        <div class="col-xs-6">.col-xs-6</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1>实例：手机、平板、桌面</h1>
+    <h3> 在上面案例的基础上，通过使用针对平板设备的 .col-sm-* 类，我们来创建更加动态和强大的布局吧。
+    </h3>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+
+        <!-- Optional: clear the XS cols if their content doesn't match in height -->
+        <div class="clearfix visible-xs-block"></div>
+        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>响应式列重置</h1>
+    <h3>
+        即便有上面给出的四组栅格class，你也不免会碰到一些问题，例如，在某些阈值时，某些列可能会出现比别的列高的情况。为了克服这一问题，建议联合使用 .clearfix 和 响应式工具类。
+    </h3>
+    <div class="row">
+        <div class="col-xs-6 col-sm-3">
+            .col-xs-6 .col-sm-3
+            Resize your viewport or check it out on your phone for an example.          </div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3（1）</div>
+
+        <!-- Add the extra clearfix for only the required viewport -->
+        <div class="clearfix visible-xs-block"></div>
+
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3（2）</div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3（3）</div>
+    </div>
+     <h3>
+         除了列在分界点清除响应， 您可能需要 重置偏移, 后推或前拉某个列。请看此栅格实例。
+     </h3>
+    <div class="row">
+        <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+        <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+        <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>列偏移</h1>
+    <h3>
+        使用 .col-md-offset-* 类可以将列向右侧偏移。这些类实际是通过使用 * 选择器为当前元素增加了左侧的边距（margin）。例如，.col-md-offset-4 类将 .col-md-4 元素向右侧偏移了4个列（column）的宽度。
+    </h3>
+    <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+        <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>嵌套列</h1>
+    <h3>
+        为了使用内置的栅格系统将内容再次嵌套，可以通过添加一个新的 .row 元素和一系列 .col-sm-* 元素到已经存在的 .col-sm-* 元素内。被嵌套的行（row）所包含的列（column）的个数不能超过12（其实，没有要求你必须占满12列）。
+    </h3>
+    <div class="row">
+        <div class="col-sm-9">
+            Level 1: .col-sm-9
+            <div class="row">
+                <div class="col-xs-8 col-sm-6">
+                    Level 2: .col-xs-8 .col-sm-6
+                </div>
+                <div class="col-xs-4 col-sm-6">
+                    Level 2: .col-xs-4 .col-sm-6
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>列排序</h1>
+    <h3>
+        通过使用 .col-md-push-* 和 .col-md-pull-* 类就可以很容易的改变列（column）的顺序。
+    </h3>
+    <div class="row">
+        <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+        <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+
+<script src="../bootstrap-3.3.5-dist/js/jQuery 1.12.1.js"></script>
+<script src="../bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+</body>
+</html>

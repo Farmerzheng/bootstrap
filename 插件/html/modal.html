@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript触发时的参数设置（一）</title>
+    <link rel="stylesheet" href="../wrapCss/css/bootstrap.css">
+</head>
+<body>
+<button class="btn btn-primary" type="button">点击我</button>
+
+<div class="modal fade  bs-example-modal-lg" id="myModal" tabindex="-1" >
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title">模态弹出窗标题</h4>
+            </div>
+            <div class="modal-body">
+                <p>模态弹出窗主体内容</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">保存</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="../js/jQuery%201.12.1.js"></script>
+<script src="../js/modal.js"></script>
+<script>
+
+        $(".btn").click(function () {
+
+            $("#myModal").modal(
+                    {
+
+                        keyboard: true,
+                        show: true,
+                        backdrop: true,
+                        remote:"http://app.sencha.com.cn/soya/apps/homework/server/?action=index.list&perPage=5&page=1"
+
+                    }
+            );
+
+        });
+//
+//        $("#myModal").on("loaded.bs.modal",function (e) {
+//                    console.log(e.target);
+//                }
+//        );
+
+</script>
+</body>
+</html>

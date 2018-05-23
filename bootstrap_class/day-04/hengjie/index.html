@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js'></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-logo">
+            <a href="" class="logo"></a>
+            <div class="nav-btn">
+                <span class="bar-icon bar-top"></span>
+                <span class="bar-icon bar-middle"></span>
+                <span class="bar-icon bar-bottom"></span>
+            </div>
+        </div>
+
+        <div class="nav-content">
+            <ul class="nav-wrap">
+                <li class="nav-item">畅销榜单</li>
+                <li class="nav-item">智能双Q</li>
+                <li class="nav-item">产品一览</li>
+                <li class="nav-item">套间灵感</li>
+                <li class="nav-item">技术服务</li>
+                <li class="nav-item">关于恒洁</li>
+                <li class="nav-item">官方商城</li>
+                <li class="nav-item">网点查询</li>
+                <li class="nav-item">搜索</li>
+            </ul>
+        </div>
+    </div>
+    <div class="header">
+        <a href="" class="header-link">
+            <img class="header-img" src="images/cabinet0509mb.jpg" alt="">
+        </a>
+    </div>
+    <script>
+        $('.nav-btn').on('click', function() {
+            if ($('.nav').hasClass('active')) {
+                $('.nav').removeClass('active');
+            } else {
+                $('.nav').addClass('active');
+            }
+
+        })
+    </script>
+</body>
+
+</html>
