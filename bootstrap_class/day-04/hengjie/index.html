@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src='http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js'></script>
+    <script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js'></script>
 </head>
 
 <body>
@@ -25,15 +25,221 @@
 
         <div class="nav-content">
             <ul class="nav-wrap">
-                <li class="nav-item">畅销榜单</li>
-                <li class="nav-item">智能双Q</li>
-                <li class="nav-item">产品一览</li>
-                <li class="nav-item">套间灵感</li>
-                <li class="nav-item">技术服务</li>
-                <li class="nav-item">关于恒洁</li>
-                <li class="nav-item">官方商城</li>
-                <li class="nav-item">网点查询</li>
-                <li class="nav-item">搜索</li>
+                <li class="nav-item">
+                    <a href="" class="nav-item-link">
+                        <span>
+                          <i class="icon iconfont nav-icon" style='font-size: 25px'>&#xe6ee;</i>
+                          <span class="nav-title">畅销榜单</span>
+                        </span>
+                        <i class="icon iconfont icon-arrow">&#xe636;</i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-item-link">
+                        <span>
+                            <i class="icon iconfont nav-icon">&#xe60c;</i>
+                            <span class="nav-title">智能双Q</span>
+                        </span>
+                        <i class="icon iconfont icon-arrow">&#xe636;</i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-item-link  nav-menu">
+                        <span>
+                            <i class="icon iconfont nav-icon">&#xe65b;</i>
+                            <span class="nav-title">产品一览</span>
+                        </span>
+                        <i class="icon iconfont icon-more">&#xe608;</i>
+                    </a>
+                    <ul class="content">
+                        <li class="content-item">
+                            <a href="javascript:void(0)" class="nav-menu">
+                                <span>卫生区</span>
+                                <i class="icon iconfont icon-more">&#xe608;</i>
+                            </a>
+                            <ul class="content">
+                                <li class="content-item">
+                                    <a href="" class="content-link">智能一体机</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">智能盖板</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">坐便器</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">蹲便器/配件</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="content-item">
+                            <a href="javascript:void(0)" class="nav-menu">
+                                <span>盥洗区</span>
+                                <i class="icon iconfont icon-more">&#xe608;</i>
+                            </a>
+                            <ul class="content">
+                                <li class="content-item">
+                                    <a href="" class="content-link">浴室柜</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">面盆</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">龙头</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="content-item">
+                            <a href="javascript:void(0)" class="nav-menu">
+                                <span>淋浴区</span>
+                                <i class="icon iconfont icon-more">&#xe608;</i>
+                            </a>
+                            <ul class="content">
+                                <li class="content-item">
+                                    <a href="" class="content-link">花洒</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">淋雨龙头</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">淋浴房</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">浴缸</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">浴缸龙头</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="content-item">
+                            <a href="javascript:void(0)" class="nav-menu">
+                                <span>浴室小五金</span>
+                                <i class="icon iconfont icon-more">&#xe608;</i>
+                            </a>
+                            <ul class="content">
+                                <li class="content-item">
+                                    <a href="" class="content-link">无金挂件</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">无金配件</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="content-item">
+                            <a href="javascript:void(0)" class="nav-menu">
+                                <span>厨房阳台</span>
+                                <i class="icon iconfont icon-more">&#xe608;</i>
+                            </a>
+                            <ul class="content">
+                                <li class="content-item">
+                                    <a href="" class="content-link">水槽</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">厨房龙头</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">洗衣柜</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">拖把池</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">阳台五金</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="content-item">
+                            <a href="javascript:void(0)" class="nav-menu">
+                                <span>商用产品</span>
+                                <i class="icon iconfont icon-more">&#xe608;</i>
+                            </a>
+                            <ul class="content">
+                                <li class="content-item">
+                                    <a href="" class="content-link">商用电子类</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">商用五金</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">商用便器</a>
+                                </li>
+                                <li class="content-item">
+                                    <a href="" class="content-link">小便斗</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-item-link">
+                        <span>
+                           <i class="icon iconfont nav-icon">&#xe637;</i>
+                           <span class="nav-title">套间灵感</span>
+                        </span>
+                        <i class="icon iconfont icon-arrow">&#xe636;</i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-item-link nav-menu">
+                        <span>
+                            <i class="icon iconfont nav-icon">&#xe63f;</i>
+                            <span class="nav-title">技术服务</span>
+                        </span>
+                        <i class="icon iconfont icon-more">&#xe608;</i>
+                    </a>
+                    <ul class="content">
+                        <li class="content-item">
+                            <a href="" class="content-link">恒洁技术</a>
+                        </li>
+                        <li class="content-item">
+                            <a href="" class="content-link">恒洁服务1350</a>
+                        </li>
+                        <li class="content-item">
+                            <a href="" class="content-link">恒洁6年质保</a>
+                        </li>
+                        <li class="content-item">
+                            <a href="" class="content-link">恒洁百科</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-item-link">
+                        <span>
+                             <i class="icon iconfont nav-icon">&#xe681;</i>
+                             <span class="nav-title">关于恒洁</span>
+                        </span>
+                        <i class="icon iconfont icon-arrow">&#xe636;</i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-item-link">
+                        <span>
+                            <i class="icon iconfont nav-icon">&#xe613;</i>
+                            <span class="nav-title">官方商城</span>
+                        </span>
+
+                        <i class="icon iconfont icon-arrow">&#xe636;</i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-item-link">
+                        <span>
+                             <i class="icon iconfont nav-icon">&#xe606;</i>
+                             <span class="nav-title">网点查询</span>
+                        </span>
+                        <i class="icon iconfont icon-arrow">&#xe636;</i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-item-link">
+                        <span>
+                          <i class="icon iconfont nav-icon">&#xe648;</i>
+                          <span class="nav-title">搜索</span>
+                        </span>
+                        <i class="icon iconfont icon-arrow">&#xe636;</i>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
@@ -49,6 +255,13 @@
             } else {
                 $('.nav').addClass('active');
             }
+
+        })
+
+        // 导航的二级下拉菜单
+        $('.nav-menu').on('click', function() {
+            // console.log($(this).next());
+            $(this).next().slideToggle();
 
         })
     </script>
