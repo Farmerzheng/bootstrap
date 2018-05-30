@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    @font-face {
+        font-family: "iconfont";
+        src: url('fonts/iconfont.eot');
+        /* IE9*/
+        src: url('fonts/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('fonts/iconfont.woff') format('woff'), /* chrome, firefox */
+        url('fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+        url('fonts/iconfont.svg#iconfont') format('svg');
+        /* iOS 4.1- */
+    }
+    
+    .iconfont {
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .icon {
+        font-size: 42px;
+        line-height: 44px;
+        margin: 10px 0;
+        color: #333;
+        -webkit-transition: font-size 0.25s ease-out 0s;
+        -moz-transition: font-size 0.25s ease-out 0s;
+        transition: font-size 0.25s ease-out 0s;
+    }
+    
+    .service-bar {
+        position: fixed;
+        right: 10px;
+        top: 50vh;
+        height: 150px;
+        width: 50px;
+        margin-top: -75px;
+        background-color: red;
+    }
+    
+    .service-item {
+        font-size: 0;
+        width: 44px;
+        height: 44px;
+        margin: 3px;
+        background-color: yellow;
+        text-align: center;
+        position: relative;
+    }
+    
+    .service-title {
+        display: none;
+        font-size: 16px;
+        text-align: center
+    }
+    
+    .active .service-title {
+        display: block;
+    }
+    
+    .active i {
+        display: none
+    }
+    
+    .service-float {
+        position: absolute;
+        right: 50px;
+        top: 0px;
+        display: none;
+        width: 100px;
+        height: 100px;
+        background-color: #eee;
+        box-shadow: 2px 3px 10px #aaa;
+    }
+    
+    .active .service-float {
+        display: block;
+    }
+    
+    .caret {
+        width: 0;
+        height: 0;
+        border-width: 8px 0 8px 8px;
+        border-style: solid;
+        border-color: transparent transparent transparent #eee;
+        top: 10px;
+        position: absolute;
+        right: -8px;
+    }
+</style>
+
+<body>
+    <div class="service-bar ">
+        <div class="service-item on-line">
+            <i class="icon iconfont">&#xe615;</i>
+            <span class="service-title">在线客服</span>
+            <div class="service-float">
+                <div class="caret">
+
+                </div>
+            </div>
+        </div>
+        <div class="service-item on-phone">
+            <i class="icon iconfont">&#xe635;</i>
+            <span class="service-title">客服热线</span>
+            <div class="service-float">
+                <div class="caret">
+
+                </div>
+            </div>
+        </div>
+        <div class="service-item on-weixin">
+            <i class="icon iconfont">&#xe65d;</i>
+            <span class="service-title">关注微信</span>
+            <div class="service-float">
+                <div class="caret">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js'></script>
+    <script>
+        $('.service-item').hover(function() {
+            $(this).addClass('active');
+        }, function() {
+            $(this).removeClass('active');
+        })
+    </script>
+
+</body>
+
+</html>
