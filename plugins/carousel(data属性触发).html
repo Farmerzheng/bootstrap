@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
     <style>
@@ -13,73 +14,71 @@
         }*/
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <div class="row">
-        <div id="slidershow" class="carousel slide col-md-12" data-ride="carousel">
-            <!-- 设置图片轮播的顺序 -->
-            <ol class="carousel-indicators">
-                <li class="active" data-target="#slidershow" data-slide-to="0"></li>
-                <li data-target="#slidershow" data-slide-to="1"></li>
-                <li data-target="#slidershow" data-slide-to="2"></li>
-            </ol>
-            <!-- 设置轮播图片区 -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 ">
-                                <img src="img/22.jpg" class="img-responsive"
-                                                                 alt="">
+    <div class="container">
+        <div class="row">
+            <div id="slidershow" class="carousel slide col-md-4" data-ride="carousel">
+                <!-- 设置图片轮播的顺序 -->
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#slidershow" data-slide-to="0"></li>
+                    <li data-target="#slidershow" data-slide-to="1"></li>
+                    <li data-target="#slidershow" data-slide-to="2"></li>
+                </ol>
+                <!-- 设置轮播图片区 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 ">
+                                    <img src="img/22.jpg" class="img-responsive" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12">
-                              <img src="img/23.jpg" class="img-responsive"
-                                                                 alt="">
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="img/23.jpg" class="img-responsive" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12">
-                              <img src="img/12.jpg" class="img-responsive"
-                                                                 alt="">
-                            </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="img/12.jpg" class="img-responsive" alt="">
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- 设置轮播图片控制器 -->
+                <a class="left carousel-control " data-target="#slidershow" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" data-target="#slidershow" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
-            <!-- 设置轮播图片控制器 -->
-            <a class="left carousel-control " data-target="#slidershow" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" data-target="#slidershow" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
         </div>
     </div>
-</div>
 
-<script src="js/jQuery%201.12.1.js"></script>
-<script src="js/transition.js"></script>
-<script src="js/carousel.js"></script>
-<script>
-
-    //没有定义data-ride属性时通过javascript
-    //    $("#slidershow").carousel({
-    //        interval:200,//轮番的等待时间
-    //        pause:hover, //默认鼠标悬停留在幻灯片区域停止播放
-    //        wrap:false //轮番是否持续循环
-    //    });
-</script>
+    <script src="js/jQuery%201.12.1.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/carousel.js"></script>
+    <script>
+        //没有定义data-ride属性时通过javascript
+        //    $("#slidershow").carousel({
+        //        interval:200,//轮番的等待时间
+        //        pause:hover, //默认鼠标悬停留在幻灯片区域停止播放
+        //        wrap:false //轮番是否持续循环
+        //    });
+    </script>
 </body>
+
 </html>

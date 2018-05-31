@@ -1,0 +1,87 @@
+/* sideNav */
+
+.side-nav {
+    height: 82px;
+    width: 82px;
+    position: fixed;
+    right: -41px;
+    top: 50vh;
+    margin-top: -41px;
+    background-color: #eee;
+    border-radius: 50%;
+    line-height: 82px;
+    z-index: 1;
+}
+
+.side-nav-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: #eee;
+}
+
+.side-icon {
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s;
+    margin-left: -16px;
+}
+
+.active .side-icon {
+    transform: rotate(45deg)
+}
+
+.side-nav-item {
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    width: 45px;
+    height: 45px;
+}
+
+.side-items {
+    z-index: 0;
+}
+
+.side-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.side-link img {
+    width: 100%;
+    height: 100%;
+}
+
+.side-nav-item {
+    transition: 0.5s;
+    transform: rotate(-180deg);
+}
+
+.active .circle-1 {
+    transform: translate(-18px, -90px) rotate(0deg);
+}
+
+.active .circle-2 {
+    transform: translate(-61px, -54px) rotate(0deg);
+}
+
+.active .circle-3 {
+    transform: translate(-79px, -2px) rotate(0deg);
+}
+
+.active .circle-4 {
+    transform: translate(-64px, 52px) rotate(0deg);
+}
+
+.active .circle-5 {
+    transform: translate(-18px, 92px) rotate(0deg);
+}

@@ -1,0 +1,142 @@
+/* nav */
+
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.nav-menu {
+    display: block
+}
+
+.nav-logo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-icon {
+    margin-right: 20px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.icon-more {
+    vertical-align: middle;
+    font-size: 16px;
+    margin-right: 3px;
+}
+
+.icon-arrow {
+    font-size: 20px;
+}
+
+.nav-item-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-title {
+    vertical-align: middle
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between
+}
+
+.content-item .nav-menu {
+    padding-right: 20px;
+}
+
+.nav-item .content {
+    display: none;
+    overflow: hidden;
+}
+
+.nav-item .content-item {
+    padding-left: 20px;
+}
+
+.logo {
+    float: left;
+    height: 23px;
+    width: 163px;
+    margin-left: 10px;
+    margin-top: 15px;
+    background-image: url(../images/index/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.active .logo {
+    background-image: url(../images/index/logo2.png);
+}
+
+.active .nav-logo {
+    background-color: #fff;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 7px;
+    padding: 0 10px;
+    font-size: 0;
+}
+
+.nav-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    overflow: scroll;
+    width: 100%;
+    background-color: #F9FAFB;
+    color: #3D3D3D;
+    transition: 0.3s;
+    height: 0;
+}
+
+.active .nav-content {
+    height: 600px;
+}
+
+.nav-wrap {
+    padding: 60px 30px;
+}
+
+.nav-item {
+    line-height: 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.bar-icon {
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: #333;
+    margin-top: 8px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.active .bar-middle {
+    opacity: 0;
+}
+
+.active .bar-top {
+    transform: rotate(45deg) translate(8px, 7px);
+}
+
+.active .bar-bottom {
+    transform: rotate(-45deg) translate(6px, -4px);
+}

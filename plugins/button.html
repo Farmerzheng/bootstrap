@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>button.js</title>
     <link rel="stylesheet" href="wrapCss/css/bootstrap.css">
 </head>
+
 <body>
-<br>
-<br>
-<br>
-<button type="button" id="myButton" class="btn btn-primary">
+    <br>
+    <br>
+    <br>
+    <button type="button" id="myButton" class="btn btn-primary">
     默认状态
 </button>
 </body>
 <script src="js/jQuery 1.12.1.js"></script>
 <script>
+    $('#myButton').on('click', function() {
 
-   var btn = $("#myButton");
+        //    改变按钮当中显示的文本
+        $(this).text('正在加载中……')
 
-   btn.on("click",function(){
+        // 发送网络请求，加载资源
+        $.ajax({
+            url: '',
+            data: {},
+            method: "GET",
+            timeout: 5000,
+            success: function() {
 
-       $(this).text("正在加载中。。。");
+                // 数据请求成功
+                $(this).text('加载完成')
+            },
+            error: function() {
 
-    //    this.innerText="正在加载中……"
+            }
+        })
 
-       var t = setTimeout(function(){
-           btn.text("加载完成")
-       },2000)
-
-       // $.ajax({
-       // 	method:"GET",
-       // 	url:"",
-       // 	data:{},
-       // 	success:function(){
-       //         $(this).text("加载完成");
-             // var t = setTimeout(function(){
-             //     btn.text("默认状态")
-             // },2000)
-       // 	},
-       // 	error:function(){
-
-       // 	}
-       // })
-
-   })
-
+    })
 </script>
+
 </html>
